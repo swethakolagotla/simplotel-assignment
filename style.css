@@ -6,15 +6,14 @@
 .navbar-items li {
   list-style: none;
   letter-spacing: 3px;
-  font-size:20px;
+  font-size: 20px;
   font-family: "Times New Roman", Times, serif;
-  
 }
 .navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -65,8 +64,8 @@ input[type="checkbox"] {
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
-   .image-text {
-    top: 23%;
+  .bg-image.image-text {
+    top: 20%;
     left: 23%;
     width: 55%;
   }
@@ -77,43 +76,37 @@ input[type="checkbox"] {
   .bg-image > div > h1 {
     font-size: 18px;
   }
-  .bg-image p {
-    font-size: 15px;
- 
+  .bg-image > div > p {
+    font-size: 14.5px;
   }
   .overlay {
     display: none;
   }
 }
-
 .overlay {
   background-image: linear-gradient(to right, #ff66db, #fdec51);
-    padding: 10px; 
+  padding: 10px;
   margin: 0;
 }
-
 section {
   background-image: linear-gradient(to right, #ff66db, #fdec51);
-  margin-top: 3rem;
- 
+  margin-top: 4rem;
 }
-
 .bg-image {
   width: 100%;
-  top:20%;
+  top: 20%;
   max-width: 100%;
   position: relative;
 }
-
 .bg-image img {
   width: 100%;
-  max-height: 100vh;
+  max-height: 110vh;
   object-fit: cover;
 }
 .image-text {
   position: absolute;
-  top: 20%;
-  left: 5%;
+  top: 24%;
+  left: 6%;
   background-color: rgba(241, 110, 132, 0.7);
   color: #fff;
   overflow: hidden;
@@ -174,15 +167,15 @@ footer {
   width: 100%;
   object-fit: cover;
   margin: 4rem auto;
-  font-family:Arial, Helvetica, sans-serif ;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
-  border-top-right-radius: 20%;
+  padding: 1rem 1rem 1rem 1rem;
+  border-top-right-radius: 25%;
   border-bottom-left-radius: 20%;
   cursor: pointer;
 }
@@ -190,11 +183,11 @@ footer {
   height: 250px;
   width: 250px;
   object-fit: cover;
-  border-top-right-radius: 20%;
+  border-top-right-radius: 25%;
 }
-.card >h3{
+.card > h3 {
   letter-spacing: 1px;
-  margin: 15px;
+  margin: 14px;
 }
 .card p {
   font-size: 15px;
@@ -262,13 +255,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 140vh;
+    height: 150vh;
   }
   .cards > div > img {
     height: 165px;
     width: 170px;
   }
-  
 }
 
 @media (max-width: 400px) {
@@ -276,7 +268,7 @@ footer {
     top: 15%;
     width: 60%;
     height: 70%;
-    left:20%;
+    left: 20%;
     padding: 1rem;
   }
   .bg-image > div > p {
