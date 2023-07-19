@@ -6,7 +6,7 @@
 .navbar-items li {
   list-style: none;
   letter-spacing: 3px;
-  font-size:21px;
+  font-size:20px;
   font-family: "Times New Roman", Times, serif;
   
 }
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -65,16 +65,21 @@ input[type="checkbox"] {
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
+   .image-text {
+    top: 23%;
+    left: 23%;
+    width: 55%;
+  }
   section {
     height: auto;
     width: 100%;
   }
   .bg-image > div > h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .bg-image p {
     font-size: 15px;
-    letter-spacing: normal;
+ 
   }
   .overlay {
     display: none;
@@ -89,13 +94,13 @@ input[type="checkbox"] {
 
 section {
   background-image: linear-gradient(to right, #ff66db, #fdec51);
-  height: 100%;
-  margin-top: 5rem;
-  width: 100%;
+  margin-top: 3rem;
+ 
 }
 
 .bg-image {
   width: 100%;
+  top:20%;
   max-width: 100%;
   position: relative;
 }
@@ -176,8 +181,8 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  padding: 1rem 1rem 1rem 1rem;
-  border-top-right-radius: 25%;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   cursor: pointer;
 }
@@ -185,7 +190,7 @@ footer {
   height: 250px;
   width: 250px;
   object-fit: cover;
-  border-top-right-radius: 25%;
+  border-top-right-radius: 20%;
 }
 .card >h3{
   letter-spacing: 1px;
