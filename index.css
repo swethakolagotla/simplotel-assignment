@@ -9,10 +9,10 @@
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
 }
-  /* .navbar-items li:nth-child(3):hover{
-  color:rgb(69, 226, 7);
-  font-size:30px;
-}   */
+/* .navbar-items li:hover:nth-child(6){
+    font-size: 25px;
+    color:green;
+} */
 .navBar {
   display: flex;
   align-items: center;
@@ -24,6 +24,9 @@
   z-index: 1;
   background-color: #fff;
 }
+/* .navBar:hover{
+    transform: rotateY(180deg);
+} */
 ul {
   margin-left: 12rem;
 }
@@ -47,11 +50,19 @@ input[type="checkbox"] {
   color: #252525;
   padding-right: 1rem;
 }
+/* .nav-logo a:hover{
+    color:green;
+} */
 .circle {
   border: 1px solid #252525;
   border-radius: 50%;
   padding: 2px;
 }
+/* .circle:hover{
+    border:2px solid blue;
+    border-radius: 100%;
+    padding:20px;
+} */
 
 @media (max-width: 1200px) {
   .navbar-items {
@@ -66,19 +77,6 @@ input[type="checkbox"] {
   .bg-image > div > h1 {
     font-size: 20px;
   }
-  /* [alt~="PASTA"]:hover{
-    transform: rotate(90deg);
-     /* transform:scale(1.2); */
-    /* border-radius: 25%; 
-  }
-   [alt~="BURGER"]{
-    transform: rotateX(180deg);
-    /* border-radius: 25%; 
-  }
-   [alt~="PIZZA"]{
-    transform: rotate(360deg);
-     
-  } */
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .bg-image.image-text {
@@ -114,18 +112,17 @@ section {
   top: 20%;
   max-width: 100%;
   position: relative;
-  perspective: 1000px;
+
+  /* perspective:1000px; */
 }
 .bg-image img {
   width: 100%;
   max-height: 110vh;
   object-fit: cover;
-    /* transition: transform 1s; for flip the background*/
-  /* transition:opacity 1s ease; */
+  /* transition:transform 4s; */
 }
 /* .bg-image img:hover{
-  /* opacity:0.5 
-transform: rotateY(180deg);
+    transform:rotateX(180deg);
 } */
 .image-text {
   position: absolute;
@@ -137,20 +134,16 @@ transform: rotateY(180deg);
   width: 41%;
   padding: 2.5rem;
   font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
-  /* perspective: 1000px; */
-  /* transition: transform 2s ease; for image text */
-   /* transition:  background-color  2s ease; */
-     /* transition: color 2s ease; */
+  transition: transform 4s;
 }
- /* .image-text:hover{
-  transform: rotateY(180deg);
-  /* background-color: aqua;
-  color:green; 
-}  */
- .image-text{
-    top:10%;/*center the lorem ipsum box  */ 
-  transform: translate(55%,55%); 
-}
+/*.image-text{
+  /* top:0;
+  left:10%;center the box horizontally
+  transform: translateX(50%); */
+/* top:15%;//center the box vertically
+ transform: translateY(50% ); */
+/* transform:rotateX(180deg) 
+}*/
 .image-text h1 {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
@@ -197,13 +190,15 @@ footer {
   font-family: sans-serif;
   padding-top: 3rem;
 }
-.menu-items.heading:hover{
-  color:green;
-}
+/* .heading::before{
+    content:"hello,";
+    display: inline-block;
+    padding:10px;
+} */
+
 .cards {
   display: flex;
   justify-content: space-around;
-  width: 100%;
   object-fit: cover;
   margin: 4rem auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -216,38 +211,30 @@ footer {
   padding: 1rem 1rem 1rem 1rem;
   border-top-right-radius: 25%;
   border-bottom-left-radius: 20%;
-  /* perspective:1000px; */
-  /* border-bottom: 2px solid green; *erspective: 1000px; */
   cursor: pointer;
-  /* overflow: hidden;  when zoom in the image , size wont be out of the card because of overflow property*/
+  overflow: hidden;
+  transition: transform 4s;
+  /* transform: rotate(25deg); */
 }
-/* .card:nth-child(3){
-   /* border-right: 2px solid green; border color-top,left,right,bottom 
+
+/* .card:hover:nth-child(2){
+     border-bottom: 2px solid green;;
+    transform:rotateX(180deg);
 } */
 .card img {
   height: 250px;
   width: 250px;
   object-fit: cover;
   border-top-right-radius: 25%;
- /* transition: transform 2s ease-in-out; */
- 
+  /* transition: transform 4s ease; */
 }
-/* .card img:hover{
-   transform:rotateX(180deg) ; //rotate image
-} */
-/* .card:hover img {
- transform: scale(1.2);//zoom -effect on image
-} */
-  /* [alt="PIZZA"]:hover{
- transform: scale(1.2); 
-/* transform:rotateX(180deg) ; //zoom effect on particular image 
-} */
-/* .card:nth-child(1){
-  color:green;//changing color of text of particular card
+/* .card img:hover {
+  transform: scale(0.8);
+  /* transform: rotate(270deg);  
 } */
 .card > h3 {
   letter-spacing: 1px;
-  margin: 14px;
+  margin: 10px;
 }
 .card p {
   font-size: 15px;
@@ -256,10 +243,6 @@ footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
-/* .heading::before{
-content: "Come On,";
-margin-top:15px;
-} */
 .btn {
   display: flex;
   justify-content: center;
@@ -292,9 +275,7 @@ margin-top:15px;
     position: absolute;
     background-color: white;
   }
-  .overlay {
-    display: none;
-  }
+  
   .navbar-items li {
     margin: 1rem;
     letter-spacing: 2px;
@@ -308,25 +289,45 @@ margin-top:15px;
     display: block;
     margin-right: 90px;
   }
-  footer {
-    height: 200vh;
-  }
+   
   .menu-items .heading {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 150vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+  }
+footer{
+    height:100%;
+  }
+ .card>h3{
+  font-size:16px;
+ 
+ }
+   .card{
+    margin-bottom:20px;
   }
   .cards > div > img {
     height: 165px;
     width: 170px;
   }
 }
-
+/* @media (max-width:976px){
+  footer {
+    height: 200vh;
+  }
+  .cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:70%;
+  }
+  .card{
+    margin-bottom:20px;
+  }
+} */
 @media (max-width: 400px) {
   .image-text {
     top: 15%;
@@ -343,5 +344,8 @@ margin-top:15px;
   }
   .overlay {
     display: none;
+  }
+  footer{
+    height:100%;
   }
 }
