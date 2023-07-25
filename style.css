@@ -62,9 +62,7 @@ input[type="checkbox"] {
   .bg-image > div > h1 {
     font-size: 20px;
   }
-  footer {
-    height: 100%;
-  }
+ 
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .bg-image.image-text {
@@ -143,7 +141,9 @@ section {
     font-size: 1rem;
     letter-spacing: 1px;
   }
-
+ footer {
+    height: 200vh;
+  }
   .bg-image > div > p {
     font-size: 13px;
   }
@@ -285,6 +285,9 @@ footer {
   }
   .menu-items .heading {
     font-size: 15px;
+  }
+   footer {
+    height: 200vh;
   }
   .overlay {
     display: none;
